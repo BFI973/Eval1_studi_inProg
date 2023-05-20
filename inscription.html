@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscription - inProg</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="index.html">
+            <img src="images/logo.png" alt="logo du site" />
+          </a>
+        </div>
+        <div>
+          <div>
+            <a href="index.html">
+              <h1>inProg</h1>
+            </a>
+          </div>
+          <div>
+            <a href="https://goo.gl/maps/z9x5YwLzBpRM72FC8">
+              19 rue d'Arcole 85000 La Roche sur Yon
+            </a>
+          </div>
+          <div>Tel: <a href="tel:01 23 45 67 89">01 23 45 67 89</a></div>
+          <div>Email: <a href="mailto:mail@inprog.com">mail@inprog.com</a></div>
+        </div>
+        <div>
+          <a href="index.html">Acceuil</a>
+          <a href="events.html">Événements</a>
+          <a href="inscription.html">Inscription</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Inscription</h1>
+      <form action="" method="post">
+        <fieldset>
+          <legend>Événement</legend>
+          <label for="evenement">
+            Choisissez l'événements auquel vous voulez participer
+          </label>
+          <select name="evenement" id="evenement" required>
+            <option value="events" selected disabled>
+              Choisissez l'événements
+            </option>
+            <option value="uniteCentral">
+              Apprendre à monter son unité central
+            </option>
+            <option value="languageWeb">
+              Apprendre les bases du language web
+            </option>
+            <option value="microSoudure">
+              Apprendre les bases en micro-soudure
+            </option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Information personnelle</legend>
+          <div>
+            <label for="nom">Votre nom</label>
+            <input type="text" name="nom" id="nom" required />
+          </div>
+          <div>
+            <label for="prenom">Votre prénom</label>
+            <input type="text" name="prenom" id="prenom" required />
+          </div>
+          <div>
+            <label for="email">Votre Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div>
+            <label for="tel">Votre n° de téléphone</label>
+            <input type="tel" name="tel" id="tel" required />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Message</legend>
+          <div>
+            <label for="message">
+              Si vous désirez nous laisser un message, n'hésitez pas !
+            </label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </fieldset>
+        <div>
+          <input type="submit" value="S'inscrire" />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div>
+        <a href="index.html">
+          <img src="images/logo.png" alt="logo du site" />
+        </a>
+        <a href="index.html">
+          <p>inProg</p>
+        </a>
+      </div>
+      <div>
+        <a target="_blank" href="https://www.facebook.com/">
+          <img src="images/facebook.png" alt="Logo Facebook" />
+        </a>
+        <a target="_blank" href="https://www.instagram.com/">
+          <img src="images/instagram.png" alt="Logo Instagram" />
+        </a>
+      </div>
+      <p>Tous droits réservés</p>
+    </footer>
+  </body>
+</html>
