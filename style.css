@@ -24,9 +24,16 @@ body {
 
 h1,
 footer {
-  font-size: 2em;
   color: #a5b4fc;
   font-family: "Lobster", cursive;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+footer {
+  font-size: 1.3em;
 }
 
 header,
@@ -52,12 +59,16 @@ a {
 }
 
 .logo-footer {
-  height: 100px;
+  height: 70px;
   width: auto;
 }
 
 .text-justify {
   text-align: justify;
+}
+
+article {
+  width: 21rem;
 }
 
 p.card-text {
@@ -73,12 +84,54 @@ p.card-text {
 }
 
 .img-events {
-  height: 200px;
-  width: auto;
+  height: 50%;
+  width: 100%;
 }
 
 legend {
   background-color: #a5b4fc;
   color: #fff;
   padding: 3px 6px;
+}
+
+textarea {
+  resize: none;
+}
+
+@media screen and (min-width: 576px) {
+  .tab-resp-sect article {
+    width: 34rem;
+  }
+
+  .inscription-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    margin: 0 auto;
+    width: 30rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tab-resp-sect article {
+    width: 46rem;
+  }
+
+  .tab-resp-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .inscription-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    margin: 0 auto;
+    width: 38rem;
+  }
 }
